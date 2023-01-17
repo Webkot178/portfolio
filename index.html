@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Portfolio</title>
+		<meta name="description" content="Описание страницы" />
+		<meta name="keywords" content="ключевые слова, фразы" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Туристическое агентство Форест Тревел" />
+		<meta property="og:description" content="Турпоходы по дикой природе" />
+		<meta property="og:image" content="./img/opengraph.jpg"/>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<div class="overlay"></div>
+
+		<!-- Верхнее меню страницы -->
+		<div class="navigation">
+			<div class="container">
+				<!-- навигация -->
+				<nav class="nav-desktop">
+					<ul class="nav-desktop__list">
+						<li><a href="#skills">Навыки</a></li>
+						<li><a href="#portfolio">Портфолио</a></li>
+						<li><a href="#working">Как я работаю</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+					</ul>
+					<div class="nav__social">
+						<!-- <a href="#!">
+							<img src="./img/icon/icon-header/linkedin.svg" alt="linkedin">
+						</a> -->
+						<a href="https://freelance.habr.com/freelancers/webkot" target="_blank">
+							<img src="./img/icon/icon-header/habr_logo_icon.svg" alt="habr-icon">
+						</a>
+						<a href="https://github.com/Webkot178" target="_blank">
+							<img src="./img/icon/icon-header/github-icon.svg" alt="github-icon">
+						</a>
+					</div>
+				</nav>
+				<!-- / навигация -->
+			</div>
+		</div>
+		<!-- / Верхнее меню страницы  -->
+
+		<!-- Мобильная версия  - Верхнее меню страницы -->
+		<div class="mobile-navigation">
+			<!-- <div class="container"> -->
+				<div class="mobile-navigation__item">
+					<div class="mobile-navigation__header">
+						<p>HTML Верстальщик</p>
+					</div>
+					<!--Мобильная Навигация -->
+					<nav class="nav">
+						<ul class="nav__list">
+							<li><a href="#skills">Навыки</a></li>
+							<li><a href="#portfolio">Портфолио</a></li>
+							<li><a href="#working">Как я работаю</a></li>
+							<li><a href="#contacts">Контакты</a></li>
+						</ul>
+						<!-- <a href="#skills">Навыки</a>
+						<a href="#portfolio">Портфолио</a>
+						<a href="#working">Как я работаю</a>
+						<a href="#contacts">Контакты</a> -->
+						<div class="social-wrapper">
+						<div class="social__icon">
+							<a href="https://api.whatsapp.com/send?phone=79779638955" target="_blank" class="social__icon-item"><img src="./img/icon/icon-social/whatsapp.svg" alt="whatsapp"></a>
+							<a href="https://www.fl.ru/users/webkotsite/portfolio/" target="_blank" class="social__icon-item"><img src="./img/icon/icon-social/freelance.png" alt="freelance"></a>
+							<a href="https://youdo.com/u11007894" target="_blank" class="social__icon-item"><img src="./img/icon/icon-social/you-do.svg" width="48" height="48" alt="youdo"></a>
+							<!-- <a href="#!" class="social__icon-item"><img src="./img/icon/icon-social/vk.svg" alt="vk"></a> -->
+							<!-- <a href="#!" class="social__icon-item"><img src="./img/icon/icon-social/instagram.svg" alt="instagram"></a> -->
+						</div>
+						<div class="social-link">
+							<a class="link link--item" href="mailto:webkot.site@gmail.com">webkot.site@gmail.com</a>
+						</div>
+						</div>
+					</nav>
+
+					<!-- Иконка навигации -->
+					<div class="nav-icon">
+						<div class="nav-icon__middle"></div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+		<!-- / Мобильная версия  - Верхнее меню страницы -->
+
+		<!-- Header -->
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<div class="header__content">
+						<div class="header__title">
+							<h1 class="title-1 decor">Олег Портнягин</h1>
+						</div>
+						<div class="header__desc">
+							<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
+						</div>
+						<div class="buttons">
+							<a href="#skills" class="button">Познакомится</a>
+							<a href="#contacts" class="button button--gray">Контакты</a>
+						</div>
+					</div>
+					<div class="header__image-small">
+						<img src="./img/header/laptop.jpg" alt="laptop">
+						<div class="header__desc-mobile">
+							<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Image large-->
+			<div class="header__image-large">
+				<img src="./img/header/Header-Image.png" alt="WorkPlace">
+			</div>
+			<!-- / Image large-->
+		</header>
+		<!-- / Header -->
+		
+		<!-- Main -->
+		<main class="main">
+
+			<!-- Skills -->
+			<section class="skills" id="skills">
+				<div class="container">
+					<div class="skills-row">
+						<div class="skills-col">
+							<div class="skills__title">
+								<h3 class="title-3">Что я умею:</h3>
+							</div>
+							<ul class="skills__list">
+								<li> pixel perfect, полное соответствие макету</li>
+								<li> верстаю с сеткой или без</li>
+								<li> адаптивная верстка под мобильные устройства</li>
+								<li> оптимизация по retina экраны</li>
+								<li> с Bootstrap и без него</li>
+							</ul>
+						</div>
+						<div class="social">
+							<div class="social__title">
+								<h3 class="title-3">На связи:</h3>
+							</div>
+							<div class="social__icon">
+								<a href="https://api.whatsapp.com/send?phone=79779638955" target="_blank" class="social__icon-item"><img src="./img/icon/icon-social/whatsapp.svg" alt="whatsapp"></a>
+								<a href="https://www.fl.ru/users/webkotsite/portfolio/" target="_blank" class="social__icon-item"><img src="./img/icon/icon-social/freelance.png" alt="freelance" width="48" height="48"></a>
+								<a href="https://youdo.com/u11007894" target="_blank" class="social__icon-item"><img src="./img/icon/icon-social/you-do.svg" width="48" height="48" alt="youdo"></a>
+								<!-- <a href="#!" class="social__icon-item"><img src="./img/icon/icon-social/vk.svg" alt="vk"></a> -->
+								<!-- <a href="#!" class="social__icon-item"><img src="./img/icon/icon-social/instagram.svg" alt="instagram"></a> -->
+							</div>
+							<div class="social-link">
+								<a class="link link--item" href="mailto:webkot.site@gmail.com">webkot.site@gmail.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- / Skills -->
+
+			<!--  Portfolio -->
+			<section class="portfolio" id="portfolio">
+				<div class="container">
+					<div class="portfolio__title">
+						<h2 class="title-2 decor">Портфолио</h2>
+					</div>
+					<div class="card">
+						<!-- card-large -->
+						<div class="card__wrapper">
+							<a href="#!">
+								<div class="card__large">
+									<img src="./img/card/discover.jpg" alt="discover">
+								</div>
+								<h4 class="title-4">Верстка “Форест тревел”</h4>
+								<h6 class="subtitle-6">Верстка многостраничного сайта</h6>
+							</a>
+						</div>
+						<!-- / card-large -->
+						
+						<!-- card-large -->
+						<div class="card__wrapper">
+							<a href="#!">
+								<div class="card__large">
+									<img src="./img/card/imac.jpg" alt="imac">
+								</div>
+								<h4 class="title-4">Сайт приложения “Юнит”</h4>
+								<h6 class="subtitle-6">Верстка лендинга</h6>
+							</a>
+						</div>
+						<!-- / card-large -->
+
+						<!-- card-small -->
+						<div class="card__wrapper">
+							<a href="#!">
+								<div class="card__small">
+									<img src="./img/card/madcaf.jpg" alt="madcaf">
+								</div>
+								<h4 class="title-4 title--small">Верстка “Мой сайт”</h4>
+								<h6 class="subtitle-6 subtitle--small">Верстка многостраничного сайта</h6>
+							</a>
+						</div>
+						<!-- / card-small -->
+
+						<!-- card-small -->
+						<div class="card__wrapper">
+							<a href="#!">
+								<div class="card__small">
+									<img src="./img/card/phone.jpg" alt="phone">
+								</div>
+								<h4 class="title-4 title--small">Верстка “Мой сайт”</h4>
+								<h6 class="subtitle-6 subtitle--small">Верстка многостраничного сайта</h6>
+							</a>
+						</div>
+						<!-- / card-small -->
+
+						<!-- card-small -->
+						<div class="card__wrapper">
+							<a href="#!">
+								<div class="card__small">
+									<img src="./img/card/lemon.jpg" alt="lemon">
+								</div>
+								<h4 class="title-4 title--small">Верстка “Мой сайт”</h4>
+								<h6 class="subtitle-6 subtitle--small">Верстка многостраничного сайта</h6>
+							</a>
+						</div>
+						<!-- / card-small -->
+
+					</div>
+				</div>
+			</section>
+			<!-- / Portfolio -->
+
+			<!-- How I am working -->
+			<section class="working" id="working">
+				<div class="container">
+					<div class="working__wrapper">
+						<div class="working__title">
+							<h2 class="title-2 decor">Как я работаю</h2>
+						</div>
+
+						<div class="time-mgmt">
+
+							<!-- time managment block-1 -->
+							<div class="time-mgmt__block">
+								<div class="time-mgmt__title">
+									<h5 class="title-5 decor">Оцениваю макет</h5>
+								</div>
+								<div class="time-mgmt__content">
+									<p>Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p>
+								</div>
+								<div class="time-mgmt__item">
+									<span>Время: 2 часа</span>
+								</div>
+							</div>
+							<!-- / time managment block-1 -->
+
+							<!-- time managment block-2 -->
+							<div class="time-mgmt__block">
+								<div class="time-mgmt__title">
+									<h5 class="title-5 decor">ТЗ, смета и график работ</h5>
+								</div>
+								<div class="time-mgmt__content">
+									<p>Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.</p>
+								</div>
+								<div class="time-mgmt__item">
+									<span>Время: 2 - 4 часа</span>
+								</div>
+							</div>
+							<!-- / time managment block-2 -->
+
+							<!-- time managment block-3 -->
+							<div class="time-mgmt__block">
+								<div class="time-mgmt__title">
+									<h5 class="title-5 decor">Вы держите руку на пульсе</h5>
+								</div>
+								<div class="time-mgmt__content">
+									<p>Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное состояние проекта и задач.</p>
+								</div>
+							</div>
+							<!-- / time managment block-3 -->
+
+							<!-- time managment block-4 -->
+							<div class="time-mgmt__block">
+								<div class="time-mgmt__title">
+									<h5 class="title-5 decor">Выполняю каждый этап</h5>
+								</div>
+								<div class="time-mgmt__content">
+									<p>Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</p>
+								</div>
+							</div>
+							<!-- / time managment block-4 -->
+
+							<!-- time managment block-5 -->
+							<div class="time-mgmt__block">
+								<div class="time-mgmt__title">
+									<h5 class="title-5 decor">Финальное ревью проекта</h5>
+								</div>
+								<div class="time-mgmt__content">
+									<p>Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p>
+								</div>
+								<div class="time-mgmt__item">
+									<span>Время: 2 - 4 часа</span>
+								</div>
+							</div>
+							<!-- / time managment block-5 -->
+
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- / How I am working -->
+
+			<!-- Contacts -->
+			<section class="contacts" id="contacts">
+				<div class="container">
+					<div class="contacts__title">
+						<h2 class="title-2 decor">Контакты</h2>
+					</div>
+					<div class="contacts__row">
+						<div class="contacts__social">
+							<div class="social-link">
+								<ul class="link-list">
+									<li><span class="link-text">Email</span><a class="link" href="mailto:webkot.site@gmail.com">webkot.site@gmail.com</a></li>
+									<li><span class="link-text">Телефон</span><a class="link" href="tel:+79779638955">+7-977-963-89-55</a></li>
+									<li><span class="link-text">Резюме</span><a class="link" href="#!">Смотреть Резюме</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="contacts__text">
+							<p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом —  напишите мне.
+							</p>
+							<div class="contacts__img">
+								<img src="./img/main/contacts-icon.svg" alt="ticks">
+							</div>
+						</div>
+					</div>
+					<div class="social__icon">
+						<a href="https://api.whatsapp.com/send?phone=79779638955" target="_blank" class="social__icon-item"><img src="./img/icon/icon-social/whatsapp.svg" alt="whatsapp"></a>
+						<a href="https://www.fl.ru/users/webkotsite/portfolio/" target="_blank" class="social__icon-item"><img src="./img/icon/icon-social/freelance.png" width="48" height="48" alt="freelance"></a>
+						<a href="https://youdo.com/u11007894" target="_blank" class="social__icon-item"><img src="./img/icon/icon-social/you-do.svg" width="48" height="48" alt="youdo"></a>
+						<!-- <a href="#!" class="social__icon-item"><img src="./img/icon/icon-social/vk.svg" alt="vk"></a> -->
+						<!-- <a href="#!" class="social__icon-item"><img src="./img/icon/icon-social/instagram.svg" alt="instagram"></a> -->
+					</div>
+				</div>
+			</section>
+			<!-- / Contacts -->
+
+		</main>
+		<!-- Main -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__copyright">
+					<p>© 2022 — Олег Портнягин</p>
+				</div>
+				<div class="footer__content">
+					<p>Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов.<br>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="https://webcademy.ru/" target="_blank" >WebCademy.ru</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!-- / Footer -->
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>
