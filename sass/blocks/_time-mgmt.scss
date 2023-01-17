@@ -1,0 +1,156 @@
+.time-mgmt {
+    width: 901px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        width: auto;
+    }
+}
+
+.time-mgmt__block {
+    position: relative;
+    width: 50%;
+    padding-right: 55px;
+    padding-left: 25px;
+    padding-bottom: 45px;
+    // margin-bottom: 45px;
+    text-align: right;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        padding-bottom: 68px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        margin-left: 165px;
+        margin-right: auto;
+        padding-right: 0;
+        padding-left: 55px;
+        text-align: left;
+        padding-bottom: 58px;
+    }
+
+    /* Mobile */
+    @media (max-width :767px) {
+        padding-bottom: 26px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+//.обеспечивает шахматный порядок контента
+    &:nth-child(even) {
+        margin-left: auto;
+        padding-left: 53px;
+        text-align: left;
+
+        /* Tablet Small */
+        @media (max-width: 899px) {
+            margin-left: 165px;
+            margin-right: auto;
+        }
+
+        /* Mobile */
+        @media (max-width :767px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        top: 0;
+        right: -17px;
+
+        border-radius: 50%;
+        border: 4px solid #E1EEF4;
+        background: #FFFFFF;
+
+        /* Tablet Small */
+        @media (max-width: 899px) {
+            right: auto;
+            left: 0;
+        }
+    }
+
+    //.перестраиваем у четных кружок влево
+    &:nth-child(even):before {
+        right: auto;
+        left: -17px; // что был вцентре
+
+        /* Tablet Small */
+        @media (max-width: 899px) {
+            left: 0;
+        }
+    }
+
+    &:not(:last-child):after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        top: 34px;
+        right: -2px;
+        bottom: 0;
+        background-color: #E1EEF4;
+
+        /* Tablet Small */
+        @media (max-width: 899px) {
+            right: auto;
+            left: 15px;
+        }
+    }
+
+    //.перестраиваем у четных полоску влево
+    &:nth-child(even):after {
+        right: auto;
+        left: -2px; // что был вцентре
+
+        /* Tablet Small */
+        @media (max-width: 899px) {
+            right: auto;
+            left: 15px;
+        }
+    }
+}
+
+.time-mgmt__title {
+    margin-bottom: 8px;
+}
+
+.time-mgmt__content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+
+    & p + p {
+        margin-top: 1em;
+    }
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        font-size: 14px;
+    }
+}
+
+.time-mgmt__item {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        font-size: 14px;
+    }
+}
+

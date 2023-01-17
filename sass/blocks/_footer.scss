@@ -1,0 +1,37 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: left;
+    background-color: #333333;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.footer__copyright {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #FFFFFF;
+}
+
+.footer__content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #B0B0B0;
+
+    & a {
+        text-decoration: underline;
+        color: #fff;
+    }
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        font-size: 14px;
+    }
+}

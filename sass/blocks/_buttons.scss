@@ -1,0 +1,29 @@
+.button {
+    padding: 19px 40px;
+    border-radius: 50px;
+
+    white-space: nowrap;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+    background: #FBDC4D;
+
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        padding: 16px 26px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+        display: none;
+    }
+}
+
+.button--gray {
+    background: #EFF7FC;
+}
