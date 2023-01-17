@@ -1,0 +1,816 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@400;700&display=swap');
+
+/* .header, .main {
+    display: none;
+} */
+
+html {
+    height: 100%; /* sticky footer */
+    scroll-behavior: smooth; /* для плавного скролла */
+}
+
+body {
+    height: 100%; /* sticky footer */
+    display: flex; /* sticky footer */
+    flex-direction: column; /* sticky footer */
+    
+    font-family: 'PT Sans', sans-serif;
+    color: #31405B;
+}
+
+body > * {
+    flex-shrink: 0; /* sticry footer */
+}
+
+.bgcolor {
+    background-color: #F2F8F6;
+}
+
+.main-header {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.3;
+    color: #31405B;
+}
+
+.inner-page {
+    padding-top: 60px;
+    padding-bottom: 97px;
+}
+
+/* Header
+*/
+
+.header {
+    position: relative;
+    padding-top: 50px;
+
+    height: 800px;
+
+    font-family: 'PT Sans', sans-serif;
+
+    background-image: url(../img/page-1/header/HEADER.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #265847;
+    color: #fff;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+    background-image: url(../img/page-2/header/header-small-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #265847;
+    color: #fff;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+.header-nav-button {
+    display: none;
+}
+
+.header-nav-list {
+    display: flex;
+
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.header-nav-list-item:not(:last-child) {
+    margin-right: 50px; 
+}
+
+.header-nav-list-link {
+    color: #fff;
+    transition: 0.7s;
+}
+
+.header-nav-list-link:hover {
+    color: #09f49d;
+    text-shadow: 5px 8px 12px #2c3952, -5px -8px 12px rgba(7, 202, 130, 0.995);
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1170px;
+    
+    text-align: center;
+}
+
+.header-tittle {
+    margin-bottom: 20px;
+
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.header-subtitle {
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+/* скролл */
+.header-scroll-link {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%);
+
+    padding-bottom: 35px;
+
+    font-size: 16px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+/* стрелка скролла */
+.header-scroll-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+    display: block;
+    content: "";
+
+    width: 24px;
+    height: 24px;
+    
+    background-image: url(../img/page-1/header/arrow-down.svg);
+}
+
+/* Main 
+*/
+
+.main {
+    padding: 120px 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 1170px;
+}
+/* отображение контента на главной странице в шахматном порядке */
+.main-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.main-row {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 120px;
+}
+
+/* у последнего элемента обнуляется отступ снизу */
+.main-row:last-child {
+    margin-bottom: 0;
+}
+
+.main-row-content {
+    width: 470px;
+}
+
+.main-row-content-text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    font-size: 20px;
+    line-height: 1.6;
+    color: #31405B;
+}
+
+/* задается расстояние между запланированными параграфами */
+.main-row-content-text p + p {
+    margin-top: 1em;
+}
+
+.main-row-content-text a {
+    color:#138ECE;
+}
+
+.main-row-img {
+    width: 570px;
+}
+
+/* описание кнопки ( кнопка как элемент текста ) */
+.button {
+    padding:  12px 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+
+    background-color: #0ac882dd;
+    box-shadow: 5px 8px 20px rgba(24, 219, 148, 0.35);
+    border-radius: 50px;
+
+    color: #fff;
+
+    transition: 0.7s;
+}
+
+/* активность кнопки */
+.button:hover, .button:focus {
+    position: relative;
+    top: 1px;
+    box-shadow: 5px 8px 12px #2c3952;
+}
+    
+/* Footer  
+*/
+
+.footer {
+    margin-top: auto; /* sticky footer */
+    padding-top: 70px;
+    padding-bottom: 90px;
+    background-color: #265847;
+    color: #fff;
+}
+
+.logo-list {
+    margin-top: 26px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-widgets-wrappers {
+    display: flex;
+    padding-top: 10px;
+}
+.footer a {
+    transition: 0.7s;
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #09f49d;
+    text-shadow: 5px 8px 12px rgba(7, 202, 130, 0.995), -5px -8px 12px rgba(7, 202, 130, 0.995);
+}
+
+.footer-copyright {
+    width: 270px;
+}
+
+.footer-copyright p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-widget-info {
+    width: 170px;
+}
+
+.footer-widget-title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.footer-widget-services, .footer-widget-contacts {
+    width: 270px;
+}
+
+/* отступ внешний применяется к элементу, если у него есть сосед слева */
+.footer-widget + .footer-widget {
+    margin-left: 30px;
+}
+
+.footer-widget-list li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.footer-widget-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Inner page tours 
+*/
+
+.inner-page-tous-header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Cards 
+*/
+
+.card-title-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 80px;
+    background-color: #A6A6A6;
+    color: #fff;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.3;
+
+    transition: 0.7s;
+}
+
+.card-title:hover {
+    color: #2c3952;
+}
+
+.cards-first-row {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.card-link-wrapper {
+    transition: 0.7s;
+}
+
+/* подсветка обесцвечиванием карточки */
+.card-link-wrapper:hover {
+    opacity: 0.8;
+    text-shadow: 5px 8px 12px rgba(7, 202, 130, 0.995), -5px -8px 12px rgba(7, 202, 130, 0.995);
+}
+
+.cards-second-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+/* 1-2 карточки */
+.card-smaller {
+    width: 570px;
+    height: 435px;
+    background-color: #265847;
+}
+
+/* 3-4 карточки */
+.card-bigger {
+    width: 670px;
+    height: 365px;
+    background-color: #265847;
+}
+
+/* 5 карточка */
+.card-most-bigger {
+    width: 470px;
+    height: 760px;
+    background-color: #265847;
+}
+
+/* всем элементам первого порядка в данном диве присваивается внешний отступ сверху */
+.cards-second-row-column-1-2 > * + *{
+    margin-top: 30px;    
+}
+
+.card-smaller .send {
+    background-color: #C1B19B;
+}
+
+.card-bigger .marine {
+    background-color: #66B0BE;
+}
+
+.card-bigger .brownn {
+    background-color: #876F56;
+}
+
+.card-most-bigger .greenn {
+    background-color: #27695E;    
+}
+
+/* Article page 
+*/
+
+.row-article-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-page-nav {
+    padding-top: 10px;
+    width: 270px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.article-page-nav-title {
+    margin-bottom: 34px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.3;
+    color: #31405B;
+}
+
+.article-page-nav-list {
+    font-size: 20px;
+    border-top: 1px solid #D6D9D8;
+}
+
+.article-page-nav-list li {
+    border-bottom: 1px solid #D6D9D8;
+}
+
+.article-page-nav-list a {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    color: #138ECE;
+}
+
+.article-page-nav-list a.active {
+    font-weight: 700;
+    color: #E04E4E;
+}
+
+.article-page-nav-list a:hover {
+    text-decoration: underline;
+}
+
+/* article-page-article */
+
+.article-page-article {
+    margin-bottom: 8px;
+    width: 770px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #31405B;
+}
+
+.article-page-article h1, 
+.article-page-article h2, 
+.article-page-article h3, 
+.article-page-article h4, 
+.article-page-article h5, 
+.article-page-article h6 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.article-page-article h1 {
+    /* margin-top: -6px; */
+    margin-bottom: 40px;
+    font-size: 54px;
+    line-height: 1.3;
+}
+
+.article-page-article h2 {
+    font-size: 32px;
+}
+
+.article-page-article h3 {
+    font-size: 26px;
+}
+
+.article-page-article h4 {
+    font-size: 22px;
+}
+
+.article-page-article h5 {
+    font-size: 20px;
+}
+
+.article-page-article h6 {
+    font-size: 18px;
+}
+
+.article-page-article p {
+    margin-bottom: 15px;
+}
+
+.article-page-article img {
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+
+.article-page-article > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Contacts 
+*/
+
+.contacts-header {
+    margin-bottom: 40px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* растянуть колонки по верхней границы ряда */
+}
+
+.contact-info {
+    width: 470px;
+}
+
+.contact-block:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+/* .contact-block + .contact-block {
+    margin-bottom: 40px;
+} */
+
+.contact-block-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+.contact-block-body {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.contact-list li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+/* для задания габаритов карты, на сайте (так как в iframe мы указали ширину и высоту 100%, для удобства дальнейшей адаптации) нам необходимо обратится к конкретному .contact-block-body (такой же блок мы имеем и сверху), поэтому для обращения именно к нижнему блоку с картой нам нужно прописать селектор .contact-block + .contact-block .contact-block-body и далее уже ему задать ширину и высоту  */
+.contact-block + .contact-block .contact-block-body {
+    width: 470px;
+    height: 345px;
+}
+
+.contact-list a {
+    color: #31405B;
+    color: #138ECE;
+}
+
+.contact-list-icon {
+    position: relative;
+    padding-left: 39px;
+}
+
+.contact-list-icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.contact-list-icon.phone::before {
+    background-image: url("../img/page-4/icon/phone.svg");
+}
+
+.contact-list-icon.email::before {
+    background-image: url("../img/page-4/icon/mail.svg");
+}
+
+.contact-list-icon.address::before {
+    background-image: url("../img/page-4/icon/map-pin.svg");
+}
+
+/* Contact-form */
+/*.описание формы данных */
+.form {
+    padding: 40px;
+    width: 630px;
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(211, 211, 211, 0.25);
+}
+
+.form-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.3;
+
+}
+.form-group {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/*.чтобы задать другой отступ последней форм-группе отступ отличный от заданного заранее, выбираем last-of-type -последний данного типа (в контейнере), last-child не подойдет */
+.form-group:last-of-type {
+    margin-bottom: 35px;
+}
+
+.form-group-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.form-group-row {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-row:last-child {
+    margin-bottom: 0;
+}
+
+.form-group-row > .input + .input {/* задание внешнего отступа элементам первого порядка в группе form-group-row, если у него есть сосед слева */
+    margin-left: 10px;
+}
+
+/* личные данные */
+.input {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #EEEEEE;
+    border: 1px solid #C0C0C0;
+    border-radius: 6px;
+
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.input::placeholder {
+    color: rgba(49, 64, 91, 0.5);
+}
+
+.input:focus {
+    border: 2px solid #000;
+}
+
+/* Radio-button */
+/* Описание радио-кнопки */
+.radio-row {
+    /* display: block; */
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    /* cursor: pointer; висит на label */
+}
+
+.radio-row:last-child {
+    margin-bottom: 0;
+}
+
+/* создание кастомной радио-кнопки */
+.custom-radio {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+    line-height: 1.3;
+
+    background: #EEEEEE;
+    border: 1px solid #C0C0C0;
+    border-radius: 50%;
+}
+
+/* описание реальной радио-кнопки */
+/* скрываем реальную радио-кнопку */
+.real-radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    appearance: none;
+}
+
+.real-radio:focus + .custom-radio {
+    border: #2AB698;
+    box-shadow: 0 0 10px rgba(42, 182, 152, 0.5);
+    outline: 2px solid #000;
+}
+
+/* описание выбора кастомной радио-кнопки */
+.custom-radio::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #2AB698;
+    border-radius: 50%;
+
+    transition: transform 0.2s ease-in;
+}
+
+/* визуализируем псевдоэлемент когда видна реальная радиокнопка */
+.real-radio:checked + .custom-radio::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Checkboxes */
+
+.checkbox-row {
+    display: flex; /* при добавлении защиты от переполнения контента дисплей-блок поменяли на flex */
+    align-items: flex-start; /* при добавлении защиты от переполнения контента добаляем данную строку, чтобы контент не растягивался по высоте (при большом наполнении) */
+    margin-bottom: 17px;
+}
+
+.checkbox-row:last-child {
+    margin-bottom: 0;
+}
+/* описание реального чекбокса */
+/* скрываем реальный чекбокс */
+.real-checkbox {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    appearance: none;
+}
+
+/* Фокус при наведении табом */
+.real-checkbox:focus + .custom-checkbox {
+    border: #2AB698;
+    box-shadow: 0 0 10px rgba(42, 182, 152, 0.5);
+    outline: 2px solid #000;
+}
+
+/* Создание кастомного чекбокса */
+.custom-checkbox {
+    flex-shrink: 0; /* чтобы при большом наполнении контентом, контент не сжимал чекбокс с галочкой */
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    background: #eee;
+    border: 1px solid #C0C0C0;
+    border-radius: 2px;
+}
+
+/* создание галочки */
+.custom-checkbox::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    content: "";
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/page-4/icon/check.svg");
+
+    transition: transform 0.2s ease-in;
+}
+
+/* визуализируем псевдоэлемент когда виден реальный чекбокс */
+.real-checkbox:checked + .custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Submit-button */
+/* Закоментируем в фаиле reset.css, button, input[type="submit"] */
+/* Закоментируем в фаиле reset.css, input:focus, input:active */
+
+/* Error-404 
+*/
+
+.error-404 {
+    color: #138ECE;
+}
+
